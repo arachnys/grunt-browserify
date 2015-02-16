@@ -11,6 +11,7 @@ var path = require('path');
 var async = require('async');
 var browserify = require('browserify');
 var watchify = require('watchify');
+var browserifyInc = require('browserify-incremental');
 
 module.exports = Task;
 
@@ -33,7 +34,8 @@ Task.runTask = function (grunt, options, file, next) {
     writer: grunt.file,
     logger: grunt,
     browserify: browserify,
-    watchify: watchify
+    watchify: watchify,
+    browserifyInc: browserifyInc
   });
   var files = grunt.file.expand({filter: 'isFile'}, file.src).map(function (f) {
     return path.resolve(f);
