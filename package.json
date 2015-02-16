@@ -35,7 +35,8 @@
     "glob": "^4.3.4",
     "lodash": "^2.4.1",
     "resolve": "^1.0.0",
-    "watchify": "^2.2.1"
+    "watchify": "^2.2.1",
+    "browserify-incremental": "^1.4.0"
   },
   "devDependencies": {
     "grunt-contrib-clean": "^0.6.0",
